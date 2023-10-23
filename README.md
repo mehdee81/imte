@@ -35,34 +35,34 @@ The Image Processor provides the following command-line options:
 
 - `-tovector`: Convert an image to a vector.
    ```
-   python image_processor.py -tovector <image_file>
+   python imve.py -tovector <image_file>
    ```
 
 - `-toimage`: Convert a vector to an image.
    ```
-   python image_processor.py -toimage <vector_file>
+   python imve.py -toimage <vector_file>
    ```
 
 - `-rm`: Remove a file.
    ```
-   python image_processor.py -rm <file_to_remove>
+   python imve.py -rm <file_to_remove>
    ```
 
 ## Examples
 
 - Convert an image to a vector:
    ```
-   python image_processor.py -tovector "image.jpg"
+   python imve.py -tovector "image.jpg"
    ```
 
 - Convert a vector to an image:
    ```
-   python image_processor.py -toimage vector.txt
+   python imve.py -toimage vector.txt
    ```
 
 - Remove a file:
    ```
-   python image_processor.py -rm "file_to_remove.jpg"
+   python imve.py -rm "file_to_remove.jpg"
    ```
 
 ## Contributing
