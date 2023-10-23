@@ -40,7 +40,7 @@ The Image Processor provides the following command-line options:
 
 - `-toimage`: Convert a vector to an image.
    ```
-   python imve.py -toimage <vector>
+   python imve.py -toimage <torch tensor>
    ```
 
 - `-rm`: Remove a file.
@@ -57,7 +57,7 @@ The Image Processor provides the following command-line options:
 
 - Convert a vector to an image:
    ```
-   python imve.py -toimage vector
+   python imve.py -toimage tensor
    ```
 
 - Remove a file:
