@@ -50,17 +50,17 @@ The Image Processor provides the following command-line options:
 
 ## Examples
 
-- Convert an image to a vector:
+Convert an image to a vector:
    ```
-   python imve.py -tovector "image.jpg"
+   python imve.py -tovector "c.png"
    ```
 
-- Convert a vector to an image:
+Convert a vector to an image:
    ```
    python imve.py -toimage tensor
    ```
 
-- Remove a file:
+Remove a file:
    ```
    python imve.py -rm "file_to_remove.jpg"
    ```
