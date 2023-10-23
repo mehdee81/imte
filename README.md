@@ -1,4 +1,4 @@
-# imve
+# imte
 A package for converting images to tensors and tensors to images.
 
 # Image Processor
@@ -21,7 +21,7 @@ The Image Processor is a command-line tool that allows you to convert images to 
 
 1. Clone the repository:
    ```
-   git clone https://github.com/mehdee81/imve.git
+   git clone https://github.com/mehdee81/imte.git
    ```
 
 2. Install the required dependencies:
@@ -35,34 +35,34 @@ The Image Processor provides the following command-line options:
 
 - `-totensor`: Convert an image to a tensor.
    ```
-   python imve.py -totensor "image name" -name "tensor file name"
+   python imte.py -totensor "image name" -name "tensor file name"
    ```
 
 - `-toimage`: Convert a tensor to an image.
    ```
-   python imve.py -toimage "tensor file name" -name "image  name"
+   python imte.py -toimage "tensor file name" -name "image  name"
    ```
 
 - `-rm`: Remove a file.
    ```
-   python imve.py -rm <file_to_remove>
+   python imte.py -rm <file_to_remove>
    ```
 
 ## Examples
 
 Convert an image to a tensor:
    ```
-   python imve.py -totensor "c.png" -name "image2"
+   python imte.py -totensor "c.png" -name "image2"
    ```
 
 Convert a tensor to an image:
    ```
-   python imve.py -toimage "image2.pt" -name "image2"
+   python imte.py -toimage "image2.pt" -name "image2"
    ```
 
 Remove a file:
    ```
-   python imve.py -rm "file_to_remove.jpg"
+   python imte.py -rm "file_to_remove.jpg"
    ```
 
 ## Contributing
