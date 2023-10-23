@@ -21,7 +21,7 @@ The Image Processor is a command-line tool that allows you to convert images to 
 
 1. Clone the repository:
    ```
-   git clone [https://github.com/your-username/image-processor.git](https://github.com/mehdee81/imve)
+   git clone https://github.com/mehdee81/imve.git
    ```
 
 2. Install the required dependencies:
@@ -71,4 +71,4 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 ## Contact
 
-For any questions or inquiries, please contact [mehdee.m81@gmail.com(mailto:your-email@example.com).
+For any questions or inquiries, please contact [mehdee.m81@gmail.com](mailto:mehdee.m81@gmail.com).
