@@ -1,14 +1,14 @@
 # imve
-A package for converting images to vectors and vectors to images.
+A package for converting images to tensors and tensors to images.
 
 # Image Processor
 
-The Image Processor is a command-line tool that allows you to convert images to vectors and vice versa. It provides a simple and efficient way to manipulate image files.
+The Image Processor is a command-line tool that allows you to convert images to tensors and vice versa. It provides a simple and efficient way to manipulate image files.
 
 ## Features
 
-- Convert images to vectors
-- Convert vectors to images
+- Convert images to tensors
+- Convert tensors to images
 - Remove files
 
 ## Requirements
@@ -33,14 +33,14 @@ The Image Processor is a command-line tool that allows you to convert images to 
 
 The Image Processor provides the following command-line options:
 
-- `-tovector`: Convert an image to a vector.
+- `-totensor`: Convert an image to a tensor.
    ```
-   python imve.py -tovector <image_file>
+   python imve.py -totensor "image name" -name "tensor file name"
    ```
 
-- `-toimage`: Convert a vector to an image.
+- `-toimage`: Convert a tensor to an image.
    ```
-   python imve.py -toimage <torch tensor>
+   python imve.py -toimage "tensor file name" -name "image  name"
    ```
 
 - `-rm`: Remove a file.
@@ -50,14 +50,14 @@ The Image Processor provides the following command-line options:
 
 ## Examples
 
-Convert an image to a vector:
+Convert an image to a tensor:
    ```
-   python imve.py -tovector "c.png"
+   python imve.py -totensor "c.png" -name "image2"
    ```
 
-Convert a vector to an image:
+Convert a tensor to an image:
    ```
-   python imve.py -toimage tensor
+   python imve.py -toimage "image2.pt" -name "image2"
    ```
 
 Remove a file:

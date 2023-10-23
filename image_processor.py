@@ -1,21 +1,24 @@
 import os
 from PIL import Image
 from torchvision import transforms
-
+import torch
 class ImageProcessor:
 
     def __init__(self):
         self.transform = transforms.Compose([
         transforms.ToTensor()
         ])
+        self.torch = torch
 
-    def tovector(self, address):
+    def to_tensor(self, address , name):
         try:
+            torch.set_printoptions(profile="full")
+
             image = Image.open(address)
             image = image.convert("RGB")
-            vector = self.transform(image)
-            print(vector)
-            return vector
+            tensor = self.transform(image)
+            torch.save(tensor, name.split(".")[0]+'.pt')
+            print(name.split(".")[0]+'.pt created.')
 
         except FileNotFoundError:
             print("File does not exist.")
@@ -23,12 +26,14 @@ class ImageProcessor:
         except PermissionError:
             print("You do not have the necessary access to read this file.")
 
-    def toimage(self, vector):
+    def to_image(self, tensor , name):
         try:
             transform = transforms.ToPILImage()
-            image = transform(vector)
-            image.save("new_image.jpg")
-            print("New image created.")
+            tensor = torch.load(tensor)
+            image = transform(tensor)
+            image.save(name.split(".")[0]+".png")
+
+            print(name.split(".")[0]+".png created.")
 
         except FileNotFoundError:
             print("File does not exist.")
