@@ -16,6 +16,8 @@ The Image Processor is a command-line tool that allows you to convert images to 
 - Python 3.11.5
 - argparse library
 - torchvision
+- torch
+- Pillow
 
 ## Installation
 
