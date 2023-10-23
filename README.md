@@ -40,7 +40,7 @@ The Image Processor provides the following command-line options:
 
 - `-toimage`: Convert a vector to an image.
    ```
-   python imve.py -toimage <vector_file>
+   python imve.py -toimage <vector>
    ```
 
 - `-rm`: Remove a file.
@@ -57,7 +57,7 @@ The Image Processor provides the following command-line options:
 
 - Convert a vector to an image:
    ```
-   python imve.py -toimage vector.txt
+   python imve.py -toimage vector
    ```
 
 - Remove a file:
